@@ -1,0 +1,28 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.6.0/aframe-master.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <!--create viewport for 360 theta image-->
+    <div >
+        <object class="viewer" width="70%" height="70%" data="viewport.html">
+            <embed width="100%" src="viewport.html">
+        </object>
+    </div>
+   
+   <!--create spherical menu system to change images-->
+        <div >
+        <object class="viewer" width="70%" height="20%" data="menu.html">
+            <embed width="100%" src="menu.html">
+        </object>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        console.log("loaded");
+    });
+</script>
+    
+</body>
